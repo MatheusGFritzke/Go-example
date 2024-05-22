@@ -43,6 +43,14 @@ Este projeto é uma simples API RESTful escrita em Go usando o framework Gin par
 
 ```http
 GET /todos
+```
+
+#### Listar uma tarefa pelo id
+
+```http
+GET /todos/:id
+```
+
 #### Criar uma nova tarefa
 
 ```http
@@ -59,3 +67,10 @@ PUT /todos/:id
 
 ```http
 DELETE /todos/:id
+```
+
+#### Uso no terminal
+
+```
+curl -X GET http://localhost:8080/todos
+```
